@@ -1,0 +1,289 @@
+/* -- fuentes -- */
+.text-main {
+    font-family: 'Trocchi', serif;
+    font-size: 20px;
+    text-decoration: none; 
+    text-align: left;
+    padding-left: 10px;
+}
+  
+.text-secondary {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-decoration: none; 
+    text-align: left;
+    padding-left: 10px;
+}
+
+h1 {
+    font-family: 'Trocchi', serif;
+    font-size: 50px;
+    letter-spacing: 1px; 
+    text-align: left;
+    padding-left: 10px;
+}
+
+hr {
+    background-color: black;
+    height: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+  
+/* -- formato links -- */
+a {
+    color: #3F3F44;
+    text-decoration: none; 
+}
+  
+a:hover {
+    color: #3F3F44;
+    text-decoration: none; 
+}
+  
+a:active {
+    color: #3F3F44;
+    text-decoration: none; 
+}
+  
+/* -- colores -- */
+html {
+    color: #3F3F44;
+    background-color: white;
+    justify-content: center;
+    text-align: center; 
+    padding-top: 150px;
+}
+  
+ul li {
+    list-style: none;
+    list-style-position: inherit;
+    text-decoration: none; 
+}
+
+/* boton contactame */ 
+.botonContactame {
+    width: 300px; 
+    height: 1500px;    
+    background: #B5CDA3;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-decoration: none; 
+    margin-bottom: 50px;
+}
+
+
+/* -- nav bar formato -- */
+nav {
+    background-color: #FDF6F0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+}
+  
+nav ul {
+    list-style-type: none;
+    list-style-position: inside;
+    margin: 1px 1px 1px 1px;
+    padding: 1px 1px 1px 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    justify-items: center; 
+}
+
+
+/* -- formato formulario de contacto / contacto.html -- */
+
+#formConsulta {
+    background-color: #FDF6F0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center
+} 
+
+#formConsulta {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 1fr;
+
+    grid-template-areas: 
+    "nombre"
+    "apellido" 
+    "direccion"
+    "correo" 
+    "consulta";
+
+    align-content: center;
+    align-items: center;
+    margin: 50px 50px 50px 50px;
+    padding: 10px 10px 10px 10px;
+}
+
+#nombre { 
+    grid-area: "nombre";
+    margin-left: 250px;
+}
+
+#apellido { 
+    grid-area: "apellido";
+    margin-left: 250px;
+}
+
+#direccion { 
+    grid-area: "direccion";
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+#correo { 
+    grid-area: "correo";
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+#consulta { 
+    grid-area: "consulta";
+    margin-bottom: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+/*formato boton enviar del formulario */
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    background-color: #B5CDA3;
+    border-color: #B5CDA3;
+}
+
+/* -- formato pagina de recetas / recetas.html -- */
+.recetas {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3,1fr);
+    
+    grid-template-areas: 
+    "favorita01 favorita02 favorita03";
+
+    align-items: center;
+    justify-items: center;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.favorita01 {
+    grid-area: "favorita01";
+}
+
+.favorita02 {
+    grid-area: "favorita02";
+}
+
+.favorita03 {
+    grid-area: "favorita03";
+}
+
+/* -- formato pagina shop / shop.html -- */
+/* formato del carrito*/
+
+.text-carritomain {
+    font-family: 'Trocchi', serif;
+    font-size: 20px;
+    text-decoration: none; 
+    text-align: center;
+    padding-left: 10px;
+}
+  
+.text-carritosecondary {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-decoration: none; 
+    text-align: center;
+    padding-left: 10px;
+}
+
+.btnAumentarDisminuir,
+.btn-dark,
+.btn-danger,
+.btn-info {
+    background-color: #B5CDA3;
+    border-color: #B5CDA3;
+}
+
+/* -- formato seccion ultimas recetas en el index.html -- */
+
+.ultimasRecetas {
+    display: grid;
+    grid-template-rows: 3fr;
+    grid-template-columns: 1fr;
+    
+    grid-template-areas: 
+    "ultima01"
+    "ultima02" 
+    "ultima03";
+
+    padding: 20px 20px 20px 20px;
+}
+
+.ultima01 {
+    grid-area: "ultima01";
+}
+
+.ultima02 {
+    grid-area: "ultima02";
+}
+
+.ultima03 {
+    grid-area: "ultima03";
+}
+
+/* -- formato seccion sobre mi en el index.html -- */
+.sobremi {
+    background-color: #FDF6F0;
+    padding: 20px 20px 20px 20px;
+}
+
+/*-- formato carousel en el index.html --*/ 
+#carouselExampleControlsNoTouching {
+    width: 800px;
+    height: 500px;
+
+    justify-content: center;
+    align-items: center;
+    margin-left:300px;
+}
+
+/* -- formato footer -- */
+
+.redes {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3,1fr);
+    
+    grid-template-areas: 
+    "facebook instagram pinterest";
+
+    align-content: space-between;
+    padding-left: 500px;
+    padding-right: 500px;
+}
+
+.facebook {
+    grid-area: "facebook";
+}
+
+.instagram {
+    grid-area: "instagram";
+}
+
+.pinterest {
+    grid-area: "pinterest";
+}
